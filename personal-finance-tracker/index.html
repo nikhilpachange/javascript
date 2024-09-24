@@ -1,0 +1,55 @@
+<!-- personal-finance-tracker/
+├── index.html             # The main HTML page
+├── css/
+│   └── styles.css         # Stylesheet for the project
+├── js/
+│   ├── app.js             # Main JavaScript file for logic
+├── assets/                # Images, icons, etc.
+└── README.md              # Detailed project documentation -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Personal Finance Tracker</h1>
+        </header>
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <div id="balance">
+                <h3>Current Balance: ru<span id="balance-amount">0.00</span></h3>
+            </div>
+            <div id="summary">
+                <p>Total Income: ru<span id="total-income">0.00</span></p>
+                <p>Total Expenses: ru<span id="total-expenses">0.00</span></p>
+            </div>
+        </section>
+        <section class="transaction-section">
+            <h2>Add Transaction</h2>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Enter Description" required>
+                <input type="number" id="amount" placeholder="Enter Amount" required>
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+        <section class="history-section">
+            <h2>Transaction History</h2>
+            <ul id="transaction-list"></ul>
+        </section>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
