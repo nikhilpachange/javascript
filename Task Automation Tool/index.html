@@ -1,0 +1,41 @@
+<!-- task-automation-tool/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── app.js
+└── README.md
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Automation Tool</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Automation Tool</h1>
+        </header>
+        <section class="task-section">
+            <form id="task-form">
+                <input type="text" id="task" placeholder="Enter a new task" required>
+                <select id="frequency">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section class="task-list-section">
+            <h2>Task List</h2>
+            <ul id="task-list"></ul>
+        </section>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
