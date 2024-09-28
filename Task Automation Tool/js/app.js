@@ -50,7 +50,7 @@ function deleteTask(id) {
 
 // Save to Local Storage
 function saveToLocalStorage() {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+    localStorage.setItem('taks', JSON.stringify(tasks));
 }
 
 // Initialize
