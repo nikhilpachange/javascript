@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     // Simulate real-time code synchronization (local, no server)
-    editor.on('change', function () {
+    editor.on('change', functions () {
       console.log("Code changed");
       // Future: Broadcast code changes to other connected users in real-time
     });
