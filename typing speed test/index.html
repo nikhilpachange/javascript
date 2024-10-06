@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Advanced Typing Speed Test</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <div id="text-to-type" class="text-display"></div>
+        <textarea id="user-input" placeholder="Start typing the text above..."></textarea>
+        <div class="info">
+            <div id="timer">Time: <span id="time">30</span>s</div>
+            <div id="wpm">WPM: <span id="wpm-value">0</span></div>
+            <div id="accuracy">Accuracy: <span id="accuracy-value">100</span>%</div>
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="controls">
+            <button id="resetBtn">Reset</button>
+            <button id="darkModeBtn">Toggle Dark Mode</button>
+            <select id="text-selector">
+                <option value="default">Default Text</option>
+                <option value="quotes">Famous Quotes</option>
+                <option value="random">Random Text</option>
+            </select>
+        </div>
+        <div id="leaderboard" class="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard-list"></ul>
+        </div>
+        <audio id="error-sound" src="error.mp3" preload="auto"></audio>
+        <audio id="complete-sound" src="complete.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

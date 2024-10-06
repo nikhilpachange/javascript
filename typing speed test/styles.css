@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    transition: background-color 0.3s;
+}
+
+.text-display {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #333;
+    min-height: 30px; /* Ensure height even if no text */
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: #4caf50;
+    width: 0;
+    transition: width 0.5s;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button, select {
+    margin: 5px;
+    padding: 10px 15px;
+}
+
+.leaderboard {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.leaderboard ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard li {
+    padding: 5px 0;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+}
+
+body.dark-mode .container {
+    background: #444;
+    color: white;
+}
+
+body.dark-mode .text-display {
+    color: #fff;
+}
+
+body.dark-mode button {
+    background: #555;
+    color: #fff;
+}
+
+body.dark-mode textarea {
+    background: #555;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+body.dark-mode .progress-bar {
+    background-color: #76ff03;
+}
