@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainath Bhandi Center Billing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sainath Bhandi Center Billing App</h1>
+        
+        <div class="product-selection">
+            <h2>Select Products</h2>
+            <label for="product">Product:</label>
+            <select id="product">
+                <option value="" disabled selected>Select a product</option>
+                <option value="Plates">Plates</option>
+                <option value="Cutlery">Cutlery</option>
+                <option value="Pans">Pans</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Glasses">Glasses</option>
+                <option value="Bowls">Bowls</option>
+                <option value="Spoons">Spoons</option>
+                <option value="Frying Pans">Frying Pans</option>
+                <option value="Cooking Pots">Cooking Pots</option>
+                <option value="Knives">Knives</option>
+                <option value="Serving Trays">Serving Trays</option>
+            </select>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" placeholder="Enter price" required>
+
+            <button id="addProduct">Add Product</button>
+        </div>
+
+        <div class="gst-section">
+            <h2>GST Calculation</h2>
+            <label for="gst">GST Percentage:</label>
+            <input type="number" id="gst" value="18" required> % <!-- Default GST is set to 18% -->
+        </div>
+
+        <div class="billing-details">
+            <h2>Billing Details</h2>
+            <table id="billingTable">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="total">
+                <h3>Total Amount: <span id="totalAmount">0</span> INR</h3>
+            </div>
+
+            <div class="payment-section">
+                <h2>Payment Mode</h2>
+                <label>
+                    <input type="radio" name="paymentMode" value="Online" checked> Online
+                </label>
+                <label>
+                    <input type="radio" name="paymentMode" value="Offline"> Offline
+                </label>
+            </div>
+
+            <button id="generateBill">Generate Bill</button>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <div id="bill" class="bill">
+        <h2>Sainath Bhandi Center</h2>
+        <h3>Bill</h3>
+        <div id="billContent"></div>
+        <button id="printBill">Print Bill</button>
+        <button id="clearBill">Clear Bill</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
