@@ -1,6 +1,5 @@
 document.getElementById('calculateBtn').addEventListener('click', calculateBMI);
 document.getElementById('resetBtn').addEventListener('click', resetForm);
-
 function calculateBMI() {
     const height = parseFloat(document.getElementById('height').value);
     const weight = parseFloat(document.getElementById('weight').value);
